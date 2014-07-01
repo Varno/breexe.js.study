@@ -2,6 +2,7 @@ namespace Todo.Models.Entities
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
 
     public partial class Customer
     {
@@ -11,6 +12,9 @@ namespace Todo.Models.Entities
         }
 
         public virtual System.Guid CustomerID { get; set; }
+        [Required]
+        [MaxLength(10)]
+        [MinLength(5)]
         public virtual string CompanyName { get; set; }
         public virtual string ContactName { get; set; }
         public virtual string ContactTitle { get; set; }
