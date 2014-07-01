@@ -19,8 +19,8 @@ namespace Todo.Controllers
         static DateTime _lastRefresh = DateTime.Now; // will first clear db at Now + "RefreshRate" 
         // static DateTime lastRefresh = DateTime.MinValue; // will clear when server starts
 
-        readonly EFContextProvider<TodosContext> _contextProvider =
-            new EFContextProvider<TodosContext>();
+        readonly DataService _contextProvider =
+            new DataService();
 
         public TodosController()
         {
