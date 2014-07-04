@@ -6,10 +6,10 @@
     public class TodosContext : DbContext 
     {
         // DEVELOPMENT ONLY: initialize the database
-        static TodosContext()
-        {
-            Database.SetInitializer(new TodoDatabaseInitializer());
-        }
+        //static TodosContext()
+        //{
+        //    Database.SetInitializer(new TodoDatabaseInitializer());
+        //}
 
         public DbSet<TodoItem> Todos { get; set; }
         // public DbSet<Category> Categories { get; set; }

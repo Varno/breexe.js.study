@@ -167,6 +167,9 @@
     <Compile Include="App_Start\BreezeWebApiConfig.cs" />
     <Compile Include="Controllers\TodosController.cs" />
     <Compile Include="Models\Entities\Customer.cs" />
+    <Compile Include="Models\Entities\Order.cs" />
+    <Compile Include="Models\Entities\OrderDetail.cs" />
+    <Compile Include="Models\Entities\Product.cs" />
     <Compile Include="Models\TodoDatabaseInitializer.cs" />
     <Compile Include="Models\TodoItem.cs" />
     <Compile Include="Models\DataService.cs" />

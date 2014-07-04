@@ -8,7 +8,7 @@ namespace Todo.Models.Entities
     {
         public Customer()
         {
-            //this.Orders = new HashSet<Order>();
+            this.Orders = new HashSet<Order>();
         }
 
         public virtual System.Guid CustomerID { get; set; }
@@ -24,6 +24,6 @@ namespace Todo.Models.Entities
         public virtual string PostalCode { get; set; }
         public virtual string Country { get; set; }
         public virtual string Phone { get; set; }
-        //public virtual ICollection<Order> Orders { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }

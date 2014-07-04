@@ -23,7 +23,7 @@ namespace Todo.Models
 
         private static Customer CreateItem()
         {
-            return new Customer()
+            var result = new Customer()
             {
                 CustomerID = Guid.NewGuid(),
                 CompanyName = "company1",
@@ -36,6 +36,8 @@ namespace Todo.Models
                 Country = "страна",
                 Phone = "телефон"
             };
+            result.Orders.Add(new Order() { Customer = result, OrderDate = DateTime.Now });
+            return result;
         }
 
         public static void PurgeDatabase(TodosContext context)

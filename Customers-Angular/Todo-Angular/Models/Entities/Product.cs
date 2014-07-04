@@ -7,8 +7,8 @@ namespace Todo.Models.Entities
     {
         public virtual int ProductID { get; set; }
         public virtual string ProductName { get; set; }
-        public virtual Nullable<int> SupplierID { get; set; }
-        public virtual Nullable<int> CategoryID { get; set; }
+        //public virtual Nullable<int> SupplierID { get; set; }
+        //public virtual Nullable<int> CategoryID { get; set; }
         public virtual string QuantityPerUnit { get; set; }
         public virtual Nullable<decimal> UnitPrice { get; set; }
         public virtual Nullable<short> UnitsInStock { get; set; }
@@ -18,7 +18,7 @@ namespace Todo.Models.Entities
         public virtual Nullable<System.DateTime> DiscontinuedDate { get; set; }
         public virtual int RowVersion { get; set; }
 
-        public virtual Category Category { get; set; }
-        public virtual Supplier Supplier { get; set; }
+        //public virtual Category Category { get; set; }
+        //public virtual Supplier Supplier { get; set; }
     }
 }
